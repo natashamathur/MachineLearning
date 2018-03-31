@@ -1,0 +1,11 @@
+You should download and combine data from the open data portal for 2017
+about the following 311 requests
+a. Graffiti Removal
+b. Vacant and Abandoned Buildings Reported
+c. Alley Lights Out
+2. Generate summary statistics for these requests including but not limited to
+number of requests of each type (and subtype within each of the types
+above) over time, by neighborhood, response time by the city. Please use a
+combination of tables and graphs to present these summary stats.
+3. Based on these summary statistics, tell me 5 interesting things you learned
+(about Chicago and the different neighborhoods) using the 311 data.
