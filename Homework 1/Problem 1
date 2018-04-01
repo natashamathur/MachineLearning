@@ -9,3 +9,13 @@ above) over time, by neighborhood, response time by the city. Please use a
 combination of tables and graphs to present these summary stats.
 3. Based on these summary statistics, tell me 5 interesting things you learned
 (about Chicago and the different neighborhoods) using the 311 data.
+
+1) The street in Chicago with the most alley light issues is 2747 N Laramie Avenue in Logan Square with 80 complaints.
+The next addresses with the most issues are: 5201 W Diversey Ave (74), 2745 E 130th St (71), 4126 W Jackson Blvd (63),
+and 3830 N Odell Ave (61). 
+
+2) Community Area 24 has had the most complaint calls, 72841. 
+
+3) The average response time to an "Alley Light" complaint is 47 days. 
+
+4) There are a total of 199429 - 199280
