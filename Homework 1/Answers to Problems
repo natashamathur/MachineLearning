@@ -1,0 +1,31 @@
+# Part 1
+
+1)	The street in Chicago with the most alley light issues is 2747 N Laramie Avenue in Logan Square with 80 complaints. The next addresses with the most issues are: 5201 W Diversey Ave (74), 2745 E 130th St (71), 4126 W Jackson Blvd (63), and 3830 N Odell Ave (61). 
+2)	Community Area 24 has had the most complaint calls, 72841. 
+3)	The average response time to an "Alley Light" complaint is 47 days. 
+4)	There were 144,341 requests in 2017 and 144,092 unique service require numbers. This means that 219 of the calls were for pre-existing complaints.
+5)	About 40% of vacant buildings are being occupied by someone, whether its homeless people, children, or gang members. 
+
+# Part 2 
+
+1)	Blocks where the mean white population is much lower than average and the female population is slightly lower than average are much more likely to get "Vacant and Abandoned Buildings Reported". 
+2)	Blocks with higher percentages of married residents and a high white population tend to get "Alley Lights Out". 
+3)	The characteristics of a neighborhood, especially when it comes to demographic factors, are unlikely to change rapidly, barring a major political or social event. 
+4)	Blocks that get "Vacant and Abandoned Buildings" reported more than "Alley Lights Out" appear to have a substantively smaller white population and a slightly smaller than average female population. A call for a Vacant building is almost half as likely as a call for Alley Light Out in a block with a higher than average population of non-native speakers. 
+
+#Part 3
+
+Question A) Using the data post-2017, this is most likely to be an Alley Lights out related call. The address '3600 W Roosevelt Rd' is in zip code 60624. For that zip code there were 612 Alley Lights service requests (57%), 311 Graffiti Removal service requests (29%) and 146 Vacant Building service requests (14%) in 2017. 
+
+Question B) The zipcodes for the Garfield neighborhood are 60624 and 60612. The zip codes for the Uptown neighborhood are 60613 and 60640. 
+
+The percentage of Graffiti Removal requests in Garfield compared to total requests is 2261/(953+2261+198) = 0.66, 66%.
+
+The percentage of Graffiti Removal requests in the Uptown neighborhood compared to total request is 5120/(371+5120+3) = 0.93, 93%
+
+Since 0.93/0.63 = 1.4 the call most likely came from Uptown. It is 40% more likely to have come from Uptown. 
+
+Question C) (160/400) / (100/600) = 2.409. This indicates that with the given numbers a call about Graffiti Removal is 2.4x more likely to come from Uptown. 
+
+
+
