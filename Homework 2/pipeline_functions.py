@@ -22,10 +22,8 @@ def read_csv(filepath):
         
     Output:
         pandas data frame
-        
-    Modules Required:
-        pandas as pd
     '''
+    
     return pd.read_csv(filepath)
     
 # pre process data 
@@ -37,10 +35,8 @@ def replace_na_with_mean(df, var):
     Input:
         df (pandas dataframe): original dataframe
         var (string): column containing NA values
-        
-    Modules Required:
-        pandas as pd
     '''
+    
     mean_var = main[var].mean()
     main[var].fillna(mean_var, inplace=True)
     
@@ -51,6 +47,7 @@ def replace_na_with_mean(df, var):
     Input:
         df (pandas dataframe): original dataframe
     '''
+    
     na_cols = list(df.loc[:, df.isna().any()].columns)
     for col in na_cols:
         replace_na_with_mean(df, col) 
@@ -82,12 +79,8 @@ def plot_line_graph(df, var, title, xlabel, ylabel):
         title (str): title for line graph
         xlabel (str): label for x-axis
         ylabel (str): label for y-axis
-    
-    Modules Required:
-        pandas as pd
-        matplotlib.pyplot as plt
     '''
-
+    
     x = list(df.index.values)
     y = list(df[var].values)
     plt.title(title)
@@ -109,6 +102,7 @@ def add_dummy_variable(df, var, dummy_var, lambda_eq):
         dummy_var (str): column name for dummy variable
         lambda_eq (lambda equation): equation in the form 'lambda x: x < 23550' to turn the 'var' into the 'dummy_var'
     '''
+    
     df[dummy_var] = df[var].apply(lambda_eq)
     
 def add_discrete_variable(df, var, discrete_var, num_categories):
@@ -122,11 +116,12 @@ def add_discrete_variable(df, var, discrete_var, num_categories):
         discrete_var (str): column name for discretized variable
         num_categories (int): the number of categories to divide the 'var' into. 
     '''
+    
     df[discrete_var] = pd.cut(df[var], num_categories)
     
     # build classifier
     
-    def divide_df(df, var, test_size = 0.3):
+def divide_df(df, var, test_size = 0.3):
     '''
     Divides a data frame into testing and training data frames
     
@@ -138,8 +133,15 @@ def add_discrete_variable(df, var, discrete_var, num_categories):
     Outputs:
         x_train, x_test, y_train, y_test = divided data frames to use for classification
     '''
+    
+    x = df
+    y = df[var]
+    test_size = 0.3
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size)
+    
+    return x_train, x_test, y_train, y_test
 
-    def find_best_n(max_n, max_params, metric='minkowski', x_train, y_train, x_test, y_test):
+def find_best_n(max_n, max_params, metric='minkowski', x_train, y_train, x_test, y_test):
     '''
     Finds the optimal number of neighbors and parameters to look at when conducting a 
     K-nearest neighbors classification.
