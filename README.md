@@ -1,4 +1,4 @@
-### Natasha Mathur's Assignments for CAPP 30254 Machine Learning for Public Policy
+## CAPP 30254 Machine Learning for Public Policy
 
 [`Chicago 311 Calls`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework%201/311%20Data%20Exploration.ipynb) - Data exploration
 
