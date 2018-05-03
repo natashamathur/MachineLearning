@@ -1,5 +1,5 @@
 ### Natasha Mathur's Assignments for CAPP 30254 Machine Learning for Public Policy
 
-[`311 Complaints: Data Exploration`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework%201/311%20Data%20Exploration.ipynb)
+[`Chicago 311 Calls`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework%201/311%20Data%20Exploration.ipynb) - Data exploration
 
-[`Financial Delinquency: Machine Learning Pipeline`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework%202/Financial%20Distress%20Analysis%20.ipynb)
+[`Financial Delinquency`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework%202/Financial%20Distress%20Analysis%20.ipynb) - Machine learning pipeline using K-nearest-neighbors and a neural net
