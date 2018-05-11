@@ -71,6 +71,23 @@ def na_cols(df):
     
 # explore data
 
+def find_top(df, col_of_interest, sort_by='projectid', ascending=False):
+    '''
+    Find the most common (or least) values in a given column
+    
+    Inputs:
+        df (pandas dataframe): dataframe of interest
+        col (str): name of column of interest
+        sort_by (pandas series): column to sort dataframe by
+        ascending: default to False, will show highest values 
+        
+    Output:
+        output (pandas dataframe): Sorted pandas dataframe
+    '''
+    grouped = df.groupby(col_of_interest, sort=False).count()
+    
+    return grouped.sort_values(by=sort_by, ascending=False)
+
 def plot_line_graph(df, var, title, xlabel, ylabel):
     '''
     Plots a line graph based on columns in a pandas data frame
@@ -103,6 +120,40 @@ def plot_all_line_graphs(df, x_label='', y_label='', x_vals='df.index.values'):
     '''
     for col in df.columns:
         plot_line_graph(df, col, ylabel=col)
+
+def plot_pie_chart(vals, labels, colors = ["red", "blue", "green", "violet", "orange"]):
+    '''
+    Takes in values and labels and plots a pie chart
+    
+    Inputs:
+        vals (list of ints): values to be charted
+        labels (list of strings): labels for each section
+        colors (list of strings): Colors for each section of graph. Must be the same length as the number of vals. 
+    '''
+    
+    if len(colors) < len(vals):
+        return "Please insert more colors"
+    
+    plt.pie(
+    vals,
+    labels=labels,
+    # with no shadows
+    shadow=False,
+    # with colors
+    colors=colors,
+    # with one slide exploded out
+    #explode=(0, 0, 0, 0, 0.15),
+    # with the start angle at 90%
+    startangle=90,
+    # with the percent listed as a fraction
+    autopct='%1.1f%%',
+    )
+
+    plt.axis('equal')
+
+    # View the plot
+    plt.tight_layout()
+    plt.show()
     
  # generate features / predictors
 
