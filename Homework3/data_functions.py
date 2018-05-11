@@ -219,7 +219,7 @@ def plot_pie_chart(vals, labels, colors = ["red", "blue", "green", "violet", "or
     plt.show()
     
 # updated
-def bar_top(df, col_of_interest, xlabel, ylabel, title, sort_by='projectid', max = 5, width =0.35, color='blue'):
+def bar_top(df, col_of_interest, xlabel, ylabel, title, selected_col='projectid', max = 5, width =0.35, color='blue'):
     '''
     Creates a bar chart of the top categories in a given column
     
@@ -239,14 +239,14 @@ def bar_top(df, col_of_interest, xlabel, ylabel, title, sort_by='projectid', max
     plot_bar_chart(tuple(top.index), tuple(top), xlabel, ylabel, title, width, color)
 
 # updated
-def pie_top(df, col_of_interest, sort_by='projectid', labels = '', colors = ["red", "blue", "green", "violet", "orange"]):
+def pie_top(df, col_of_interest, selected_col='projectid', labels = '', colors = ["red", "blue", "green", "violet", "orange"]):
     '''
     Creates a pie chart of the top categories in a given column
     
     Inputs:
         df (pandas dataframe): dataframe of interest
         col_of_interest (str): name of column of interest
-        sort_by (pandas series): column to sort dataframe by
+        selected_col (str): name of column to display
         labels (list of strings): labels for each section
         colors (list of strings): Colors for each section of graph. Must be the same length as the number of vals.
             color choices: https://matplotlib.org/api/colors_api.html
@@ -254,7 +254,7 @@ def pie_top(df, col_of_interest, sort_by='projectid', labels = '', colors = ["re
     
     
     top = find_top(df, col_of_interest)
-    top = top[col_of_interest]
+    top = top[selected_col]
     if labels == '':
         labels = tuple(top.index)
         
