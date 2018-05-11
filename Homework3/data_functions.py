@@ -20,11 +20,11 @@ def read_data(file, source_type = 'csv'):
         all_data (pandas dataframe): pandas data frame with data
     '''
     if source_type == 'csv':
-        all_data = pd.read_csv(path + filename)
+        all_data = pd.read_csv(file)
     elif source_type == 'json':
-        all_data = pd.read_json(path + filename)
+        all_data = pd.read_json(file)
     elif source_type == 'excel':
-        all_data = pd.read_excel(path + filename)
+        all_data = pd.read_excel(file)
     
     return all_data
     
