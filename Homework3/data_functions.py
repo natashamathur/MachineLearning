@@ -254,7 +254,7 @@ def pie_top(df, col_of_interest, sort_by='projectid', labels = '', colors = ["re
     
     
     top = find_top(df, col_of_interest)
-    top = top[selected_col]
+    top = top[col_of_interest]
     if labels == '':
         labels = tuple(top.index)
         
