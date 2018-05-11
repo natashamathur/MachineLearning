@@ -28,19 +28,21 @@ def read_csv(filepath):
     
 # pre process data 
     
-def replace_na_with_mean(df, var):
+def replace_na(df, var, method='mean'):
     '''
-    Replaces all the NA's in a given column with the mean of that column.
+    Replaces all the NA's in a given column with chosen statistical value.
     
     Input:
         df (pandas dataframe): original dataframe
         var (string): column containing NA values
+        method (string): the statistical measure to use to find
+            replacement values, default set to 'mean'
     '''
     
-    mean_var = main[var].mean()
-    main[var].fillna(mean_var, inplace=True)
-    
- def fill_missing_with_mean(df):
+    val = getattr(df[var], method)()
+    df[var].fillna(replace_var, inplace=True)
+
+def fill_missing(df):
     '''
     Takes a dataframe and replaces all NA's in all columns with the mean.
     
@@ -50,7 +52,7 @@ def replace_na_with_mean(df, var):
     
     na_cols = list(df.loc[:, df.isna().any()].columns)
     for col in na_cols:
-        replace_na_with_mean(df, col) 
+        replace_na(df, col) 
         
     return df
     
@@ -65,7 +67,7 @@ def na_cols(df):
         list of columns that contain N/A's
     '''
     
-    return list(main.loc[:, main.isna().any()].columns)
+    return list(df.loc[:, df.isna().any()].columns)
     
 # explore data
 
@@ -88,6 +90,19 @@ def plot_line_graph(df, var, title, xlabel, ylabel):
     plt.ylabel(ylabel)
     plt.plot(x,y)
     plt.show()
+
+def plot_all_line_graphs(df, x_label='', y_label='', x_vals='df.index.values'):
+    '''
+    Plots all the line graphs for all the dependent variables off a given independent variable
+        
+        df (pandas data frame): data frame containing values to be graphed
+        xlabel (str): label for x-axis, default to empty label
+        ylabel (str): label for y-axis, default to empty label
+        x_vals (data frame column): column to be used for x values, default to index
+    
+    '''
+    for col in df.columns:
+        plot_line_graph(df, col, ylabel=col)
     
  # generate features / predictors
 
@@ -141,7 +156,7 @@ def divide_df(df, var, test_size = 0.3):
     
     return x_train, x_test, y_train, y_test
 
-def find_best_n(max_n, max_params, metric='minkowski', x_train, y_train, x_test, y_test):
+def find_best_n(max_n, max_params, x_train, y_train, x_test, y_test, metric='minkowski'):
     '''
     Finds the optimal number of neighbors and parameters to look at when conducting a 
     K-nearest neighbors classification.
