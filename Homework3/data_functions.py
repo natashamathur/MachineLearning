@@ -8,29 +8,37 @@ import seaborn as sns
 Read in data
 '''
 
-def read_data(file, source_type = 'csv'):
+def read_csv(filepath):
     '''
-    Reads data from an external source into a pandas data frame.
+    Takes a csv and returns a pandas data frame
     
-    Inputs:
-        file (str): file path and file name
-        source_type (str): csv (default), json, excel
-    
-    Output
-        all_data (pandas dataframe): pandas data frame with data
+    Input:
+        filepath (directory path): file location
+        
+    Output:
+        pandas data frame
     '''
-    if source_type == 'csv':
-        all_data = pd.read_csv(file)
-    elif source_type == 'json':
-        all_data = pd.read_json(file)
-    elif source_type == 'excel':
-        all_data = pd.read_excel(file)
     
-    return all_data
+    return pd.read_csv(filepath)
     
 '''
 Pre Process Data
 '''
+
+#updated
+def remove_outliers(df, col):
+    '''
+    Return data frame with outliers removed in selected column
+
+    Inputs:
+        df: pandas dataframe of interest
+        col: column to remove outliers from
+
+    Output:
+        df: pandas dataframe with outliers removed in that column 
+    '''
+    df = df[((df[col] - df[col].mean()) / df[col].std()).abs() < 3]
+    return df
 
 #updated
 def specify_range(df, col, min, max):
