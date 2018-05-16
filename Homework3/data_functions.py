@@ -8,18 +8,25 @@ import seaborn as sns
 Read in data
 '''
 
-def read_csv(filepath):
+def read_data(file, source_type = 'csv'):
     '''
-    Takes a csv and returns a pandas data frame
+    Reads data from an external source into a pandas data frame.
     
-    Input:
-        filepath (directory path): file location
-        
-    Output:
-        pandas data frame
+    Inputs:
+        file (str): file path and file name
+        source_type (str): csv (default), json, excel
+    
+    Output
+        all_data (pandas dataframe): pandas data frame with data
     '''
+    if source_type == 'csv':
+        all_data = pd.read_csv(file)
+    elif source_type == 'json':
+        all_data = pd.read_json(file)
+    elif source_type == 'excel':
+        all_data = pd.read_excel(file)
     
-    return pd.read_csv(filepath)
+    return all_data
     
 '''
 Pre Process Data
