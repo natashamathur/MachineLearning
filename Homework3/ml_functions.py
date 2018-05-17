@@ -9,6 +9,8 @@ import sklearn.neural_network
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 
+all_models = models_to_run=['RF','DT','KNN', 'ET', 'AB', 'GB', 'LR', 'NB']
+
 # generate features / predictors
 
 def add_dummy_variable(df, var, dummy_var, lambda_eq):
