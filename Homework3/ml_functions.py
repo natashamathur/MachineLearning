@@ -108,12 +108,7 @@ def evaluate_classifier(classifier, x_train, y_train, x_test, y_test):
     print(classifier.score(x_test, y_test))
 
 ### From Rayid's simple loop or magic loop
-
-    %matplotlib inline
-
-# if you're running this in a jupyter notebook, print out the graphs
 NOTEBOOK = 0
-
 def define_clfs_params(grid_size):
     """Define defaults for different classifiers.
     Define three types of grids:
