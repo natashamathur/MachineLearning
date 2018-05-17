@@ -11,6 +11,32 @@ from sklearn.model_selection import train_test_split
 
 all_models = models_to_run=['RF','DT','KNN', 'ET', 'AB', 'GB', 'LR', 'NB']
 
+# from simpleloop
+from __future__ import division
+import pandas as pd
+import numpy as np
+import os
+import matplotlib.pyplot as plt
+import pylab as pl
+from datetime import timedelta
+import random
+from scipy import optimize
+import time
+import seaborn as sns
+from sklearn.metrics import roc_curve, auc, classification_report, confusion_matrix
+from sklearn import preprocessing, cross_validation, svm, metrics, tree, decomposition, svm
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, GradientBoostingClassifier, AdaBoostClassifier
+from sklearn.linear_model import LogisticRegression, Perceptron, SGDClassifier, OrthogonalMatchingPursuit, RandomizedLogisticRegression
+from sklearn.neighbors.nearest_centroid import NearestCentroid
+from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.cross_validation import train_test_split
+from sklearn.grid_search import ParameterGrid
+from sklearn.metrics import *
+from sklearn.preprocessing import StandardScaler
+import itertools
+from datetime import datetime
 # generate features / predictors
 
 def add_dummy_variable(df, var, dummy_var, lambda_eq):
