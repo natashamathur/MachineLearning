@@ -1,7 +1,13 @@
-Predicting what makes a Donor's Choose project likely to be fully funded
+## Donors Choose Top Projects
 
-[From a Kaggle Challenge in 2014](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data)
+Finding the most exciting and likely to be funded Donors Choose projects 
+
+[Data Source](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data)
+
+The analysis is split into an initial exploration and visualization . . . 
 
 [Data Analyis Notebook](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_DataAnalysis.ipynb)
+
+ . . . and classification and evaluation. 
 
 [Classification Notebook](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoice_Classification.ipynb)
