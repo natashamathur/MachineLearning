@@ -1,3 +1,5 @@
+from __future__ import division
+
 import math
 import pandas as pd
 import numpy as np
@@ -12,7 +14,6 @@ from sklearn.model_selection import train_test_split
 all_models = models_to_run=['RF','DT','KNN', 'ET', 'AB', 'GB', 'LR', 'NB']
 
 # from simpleloop
-from __future__ import division
 import pandas as pd
 import numpy as np
 import os
