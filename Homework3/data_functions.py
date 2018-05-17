@@ -73,7 +73,7 @@ def replace_na(df, var, method='mean'):
     '''
     
     val = getattr(df[var], method)()
-    df[var].fillna(replace_var, inplace=True)
+    df[var].fillna(val, inplace=True)
 
 #updated
 def fill_missing(df):
