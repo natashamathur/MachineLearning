@@ -10,4 +10,4 @@ The analysis is split into an initial exploration and visualization . . .
 
  . . . and classification and evaluation. 
 
-[Classification Notebook](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoice_Classification.ipynb)
+[Classification Notebook](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_Classification.ipynb)
