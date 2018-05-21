@@ -20,4 +20,4 @@ Helper functions can be found at:
 
 The policy memo on this topic:
 
-[Policy memo](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/policy%20memo.docx)
+[Policy memo](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/Donors%20Choose%20Policy%20Memo.pdf)
