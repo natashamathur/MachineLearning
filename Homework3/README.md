@@ -17,3 +17,7 @@ Helper functions can be found at:
 [Data Analysis](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/data_functions.py)
 
 [Machine Learning](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/ml_functions.py)
+
+The policy memo on this topic:
+
+[Policy memo](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/policy%20memo.docx)
