@@ -2,7 +2,7 @@
 
 ### Finding the most exciting and likely to be funded Donors Choose projects.
 
-Data was sourced from a [2014 Kaggle Challenge](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data).
+Data on [projects](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data) and [outcomes](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data) was sourced from a [2014 Kaggle Challenge](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose). 
 
 **The analysis is split into an initial exploration and visualization . . .**
 
