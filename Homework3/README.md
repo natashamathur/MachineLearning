@@ -2,7 +2,7 @@
 
 Finding the most exciting and likely to be funded Donors Choose projects 
 
-[Data Source](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data)
+Data was sourced from a [2014 Kaggle Challenge](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data).
 
 The analysis is split into an initial exploration and visualization . . . 
 
@@ -14,7 +14,7 @@ The analysis is split into an initial exploration and visualization . . .
 
 The policy memo on this topic:
 
-[Policy Memo](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/Donors%20Choose%20Policy%20Memo.pdf)
+[`Policy Memo`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/Donors%20Choose%20Policy%20Memo.pdf)
 
 
 Helper functions can be found at:
