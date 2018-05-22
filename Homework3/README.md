@@ -6,11 +6,11 @@ Finding the most exciting and likely to be funded Donors Choose projects
 
 The analysis is split into an initial exploration and visualization . . . 
 
-[Data Analyis Notebook](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_DataAnalysis.ipynb)
+[`Data Analyis Notebook`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_DataAnalysis.ipynb)
 
  . . . and classification and evaluation. 
 
-[Classification Notebook](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_Classification%2B.ipynb)
+[`Classification Notebook`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_Classification%2B.ipynb)
 
 The policy memo on this topic:
 
