@@ -1,6 +1,7 @@
 ## Donors Choose Top Projects
 
-**Finding the most exciting and likely to be funded Donors Choose projects**
+**Finding the most exciting and likely to be funded Donors Choose projects.**
+
 Data was sourced from a [2014 Kaggle Challenge](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data).
 
 **The analysis is split into an initial exploration and visualization . . .**
