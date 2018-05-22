@@ -14,13 +14,13 @@ The analysis is split into an initial exploration and visualization . . .
 
 The policy memo on this topic:
 
-[Policy memo](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/Donors%20Choose%20Policy%20Memo.pdf)
+[Policy Memo](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/Donors%20Choose%20Policy%20Memo.pdf)
 
 
 Helper functions can be found at:
 
-[Data analysis functions](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/data_functions.py)
+[Data Analysis Functions](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/data_functions.py)
 
-[Machine learning functions](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/ml_functions.py)
+[Machine Learning Functions](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/ml_functions.py)
 
 
