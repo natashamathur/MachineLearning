@@ -12,12 +12,15 @@ The analysis is split into an initial exploration and visualization . . .
 
 [Classification Notebook](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_Classification%2B.ipynb)
 
+The policy memo on this topic:
+
+[Policy memo](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/Donors%20Choose%20Policy%20Memo.pdf)
+
+
 Helper functions can be found at:
 
 [Data Analysis](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/data_functions.py)
 
 [Machine Learning](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/ml_functions.py)
 
-The policy memo on this topic:
 
-[Policy memo](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/Donors%20Choose%20Policy%20Memo.pdf)
