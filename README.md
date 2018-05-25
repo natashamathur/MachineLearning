@@ -1,4 +1,4 @@
-## CAPP 30254 Machine Learning for Public Policy
+## Machine Learning for Public Policy
 
 [`Chicago 311 Calls`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework%201/311%20Data%20Exploration.ipynb) - Data exploration of 311 calls in the city of Chicago
 
