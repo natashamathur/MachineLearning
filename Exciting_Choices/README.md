@@ -6,17 +6,17 @@ Data on [projects](https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-a
 
 **The analysis is split into an initial exploration and visualization . . .**
 
-[`Data Analyis Notebook`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_DataAnalysis.ipynb)
+[`Data Analyis Notebook`](https://github.com/natashamathur/MachineLearning2018/blob/master/Exciting_Choices/DonorsChoose_DataAnalysis.ipynb)
 
  **. . . and classification and evaluation.**
 
-[`Classification Notebook`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/DonorsChoose_Classification%2B.ipynb)
+[`Classification Notebook`](https://github.com/natashamathur/MachineLearning2018/blob/master/Exciting_Choices/DonorsChoose_Classification%2B.ipynb)
 
 **A policy memo on this topic can be found here:**
 
-[`Policy Memo`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/Donors%20Choose%20Policy%20Memo.pdf)
+[`Policy Memo`](https://github.com/natashamathur/MachineLearning2018/blob/master/Exciting_Choices/Donors%20Choose%20Policy%20Memo.pdf)
 
 
-**Helper functions:** [`Data Analysis Functions`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/data_functions.py) [`Machine Learning Functions`](https://github.com/natashamathur/MachineLearning2018/blob/master/Homework3/ml_functions.py)
+**Helper functions:** [`Data Analysis Functions`](https://github.com/natashamathur/MachineLearning2018/blob/master/Exciting_Choices/data_functions.py) [`Machine Learning Functions`](https://github.com/natashamathur/MachineLearning2018/blob/master/Exciting_Choices/ml_functions.py)
 
 
